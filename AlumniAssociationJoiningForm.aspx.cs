@@ -53,7 +53,7 @@ public partial class AlumniAssociationJoiningForm : System.Web.UI.Page
 
             DateTime indianTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, INDIAN_ZONE);
             SqlCommand cmd = new SqlCommand();
-            cmd = new SqlCommand("[dbo].[SP_AlumniRegistration]");
+            cmd = new SqlCommand("[dbo].[SP_InsertAlumniRegistration]");
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@Id", SqlDbType.Int, 10).Value = "0";
             cmd.Parameters.Add("@RegistrationNumber", SqlDbType.VarChar, 400).Value = txtUID.Text;

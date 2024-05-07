@@ -512,7 +512,7 @@
                                         <asp:TextBox ID="txtExplain" TextMode="MultiLine" CssClass="form-control" runat="server"></asp:TextBox>
                                         <br />
 
-                                        <asp:Button ID="btnQuery" runat="server" ValidationGroup="a" CssClass="btn btn-warning" Style="float: right;" Text="Submit" />
+                                        <asp:Button ID="btnQuery" runat="server" onclick="btnQuery_Click" ValidationGroup="a" CssClass="btn btn-warning" Style="float: right;" Text="Submit" />
                                     </div>
                                     <div class="col-md-3"></div>
                                 </div>
